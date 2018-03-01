@@ -1,10 +1,10 @@
-default:copy.o operaciones.o
-	gcc copy.o operaciones.o -o copy
-copy.o:copy.c
-	gcc -c copy.c
+default:procesa.o operaciones.o
+	gcc procesa.o operaciones.o -o procesa
+procesa:procesa.c
+	gcc -c procesa.c
 operaciones.o:operaciones.c
 	gcc -c operaciones.c
 todo:
-	gcc copy.c operaciones.c -o copy
+	gcc procesa.c operaciones.c -o procesa
 clean:
 	rm *.o
